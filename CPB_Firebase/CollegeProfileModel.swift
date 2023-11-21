@@ -12,5 +12,4 @@ struct CollegeProfile {
     var numberOfStudents : String
     var location : String
     var nameURL : String
-//    var completed : Bool
 }
