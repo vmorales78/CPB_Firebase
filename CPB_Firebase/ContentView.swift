@@ -37,6 +37,7 @@ struct ContentView: View {
                     collegeName = ""
                     showAlert = false
                     print(8)
+                    // test
                 }
             }
            
