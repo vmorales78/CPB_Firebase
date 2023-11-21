@@ -39,17 +39,20 @@ struct ContentView: View {
                     print(8)
                 }
             }
-            
+           
             List {
                 ForEach(viewModel.Colleges, id: \.name) { currentCollege in
-                    Text(currentCollege.name)
-                    Text(currentCollege.numberOfStudents)
-                    Text(currentCollege.location)
-                    Text(currentCollege.nameURL)
+                    VStack {
+                        Text(currentCollege.name)
+                        Text(currentCollege.numberOfStudents)
+                        Text(currentCollege.location)
+                        Text(currentCollege.nameURL)
+                    }
                 }
             }
         } .navigationTitle("College Profile Builder")
-        .padding()
+            .padding()
+    
     }
 }
 
